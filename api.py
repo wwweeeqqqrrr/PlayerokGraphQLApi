@@ -82,7 +82,7 @@ class KiokePlayerok:
         
     def get_data_from_deal_page(self,*,deal_id:str):
         """получает информацию о вашей активной сделке которая есть в https://playerok.com/deal/idсделки
-        возвращает чат айди с покупателем в данной сделке и данные во вкладке: Получение если их нет возвращает None"""
+        возвращает чат айди с покупателем в данной сделке и данные во вкладке: 'Получение', если их нет возвращает None"""
         params = {
             "operationName": "deal",
             "variables": json.dumps({"id":deal_id,"showForbiddenImage":True}),
