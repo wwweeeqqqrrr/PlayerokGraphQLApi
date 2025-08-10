@@ -20,7 +20,7 @@ pip install wrapper-tls-requests==1.1.2
    useApi = KiokePlayerok(cookies_file="cookies.json",username="вашникнеймнасайте")
    ```
 
-2. **Пример использования** (получение числа активных):
+2. **Пример использования** (получение числа активных сделок):
    ```python
    countDeals = useApi.get_actual_deals()
    if countDeals > 0:
